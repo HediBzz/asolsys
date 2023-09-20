@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="module" src="index2.js"></script>
+</head>
+
+<body>
+	<!-- <p id="toolbar">
+		<a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene">Documentation</a>
+		<a href="mailto:adrien.peytavie@liris.cnrs.fr">adrien.peytavie@liris.cnrs.fr</a>
+	</p>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.js"></script>
+	<script>
+		// Initialisation of the scene / camera / renderer
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+		var renderer = new THREE.WebGLRenderer();
+		renderer.setSize(window.innerWidth, window.innerHeight);
+		renderer.shadowMap.enabled = true;
+		document.body.appendChild(renderer.domElement);
+		camera.position.z = 8;
+
+		// Initialisation of your objects / materials / light
+		var solarSystem = new THREE.Object3D();
+		scene.add(solarSystem);
+		var ball = new THREE.SphereGeometry(1, 32, 32);
+		var sunMaterial = new THREE.MeshBasicMaterial({ color: 0xff4500 });
+		var sun = new THREE.Mesh(ball, sunMaterial);
+		sun.scale.set(0.4, 0.4, 0.4);
+		solarSystem.add(sun);
+
+		//creer mercure
+		var mercureMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 });
+		var mercure = new THREE.Mesh(ball.clone(), mercureMaterial);
+		mercure.scale.set(0.2, 0.2, 0.2);
+		mercure.position.x = 1;
+		solarSystem.add(mercure);
+
+		//creer venus
+		var venusMaterial = new THREE.MeshBasicMaterial({ color: 0xffa500 });
+		var venus = new THREE.Mesh(ball.clone(), venusMaterial);
+		venus.scale.set(0.25, 0.25, 0.25);
+		venus.position.x = 2;
+		solarSystem.add(venus);
+
+		// Créez la Terre
+		var earthMaterial = new THREE.MeshBasicMaterial({ color: 0x0000ff });
+		var earth = new THREE.Mesh(ball.clone(), earthMaterial);
+		earth.scale.set(0.1, 0.1, 0.1);
+		earth.position.x = 3;
+		solarSystem.add(earth);
+
+		//ajouter la lune ainsi que son mouvement autour de la terre
+		var moonMaterial = new THREE.MeshBasicMaterial({ color: 0x808080 });
+		var moon = new THREE.Mesh(ball.clone(), moonMaterial);
+		moon.scale.set(0.05, 0.05, 0.05);
+		moon.position.x = 0.5;
+		earth.add(moon);
+
+		// Créez Mars
+		var marsMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+		var mars = new THREE.Mesh(ball.clone(), marsMaterial);
+		mars.scale.set(0.15, 0.15, 0.15);
+		mars.position.x = 4;
+		solarSystem.add(mars);
+
+		// Créez Jupiter
+		var jupiterMaterial = new THREE.MeshBasicMaterial({ color: 0xff9900 });
+		var jupiter = new THREE.Mesh(ball.clone(), jupiterMaterial);
+		jupiter.scale.set(0.05, 0.05, 0.05);
+		jupiter.position.x = 5;
+		solarSystem.add(jupiter);
+
+		// Créez Saturne
+		var saturnMaterial = new THREE.MeshBasicMaterial({ color: 0xffcc00 });
+		var saturn = new THREE.Mesh(ball.clone(), saturnMaterial);
+		saturn.scale.set(0.04, 0.04, 0.04);
+		saturn.position.x = 6;
+		solarSystem.add(saturn);
+
+		// Créez Uranus
+		var uranusMaterial = new THREE.MeshBasicMaterial({ color: 0x00ffff });
+		var uranus = new THREE.Mesh(ball.clone(), uranusMaterial);
+		uranus.scale.set(0.03, 0.03, 0.03);
+		uranus.position.x = 7;
+		solarSystem.add(uranus);
+
+		// Créez Neptune
+		var neptuneMaterial = new THREE.MeshBasicMaterial({ color: 0x0000ff });
+		var neptune = new THREE.Mesh(ball.clone(), neptuneMaterial);
+		neptune.scale.set(0.02, 0.02, 0.02);
+		neptune.position.x = 4;
+		solarSystem.add(neptune);
+
+
+
+		// This is executed for each frames
+		function render() {
+			requestAnimationFrame(render);
+			// Animation code goes here
+			solarSystem.rotation.x += 0;
+			solarSystem.rotation.y += 0;
+			solarSystem.rotation.z += 0.05;
+
+			renderer.render(scene, camera);
+		}
+		render();
+	</script> -->
+</body>
+
+</html>
